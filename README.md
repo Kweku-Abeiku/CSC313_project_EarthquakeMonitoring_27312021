@@ -7,7 +7,7 @@ This application was built to help keep records of galamsey activities and obser
 
 ##### Build the framework
 
-Please Have the JavaFX library install.
+Please Have the JavaFX library installed.
 
 Please run the galamsey.sql in your local sql server.
 
