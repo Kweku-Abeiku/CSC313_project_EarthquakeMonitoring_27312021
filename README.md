@@ -7,7 +7,9 @@ This application was built to help keep records of galamsey activities and obser
 
 ##### Build the framework
 
-Please Have the JavaFX library install.
+Please have the database connector driver for java installed.
+
+Please Have the JavaFX library installed.
 
 Please run the galamsey.sql in your local sql server.
 
@@ -42,6 +44,9 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `galamsey_tbl`
 --
+
+
+CREATE DATABASE galamsey;
 
 CREATE TABLE `galamsey_tbl` (
   `Vegcolor` varchar(20) DEFAULT NULL,
