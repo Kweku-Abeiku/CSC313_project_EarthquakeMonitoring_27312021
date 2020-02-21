@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GalamseyProject.summary">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0072ff;">
+         <children>
+            <Pane prefHeight="720.0" prefWidth="237.0" style="-fx-background-color: #393351;">
+               <children>
+                  <ImageView fitHeight="264.0" fitWidth="226.0" layoutX="6.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-3.0" layoutY="-4.0" prefHeight="73.0" prefWidth="1280.0" style="-fx-background-color: #393351;">
+               <children>
+                  <Label fx:id="go_enter" layoutX="43.0" layoutY="-4.0" prefHeight="86.0" prefWidth="396.0" stylesheets="@../css/fullpackstyling.css" text="SUMMARY (Vegatation color)" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="88.0" fitWidth="75.0" layoutX="1176.0" layoutY="624.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/go.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="86.0" layoutX="42.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/backb.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="567.0" mnemonicParsing="false" onAction="#goHome" opacity="0.0" prefHeight="139.0" prefWidth="143.0" />
+            <Button layoutX="1125.0" layoutY="565.0" mnemonicParsing="false" opacity="0.0" prefHeight="139.0" prefWidth="143.0" />
+            <BarChart fx:id="barChart" animated="false" barGap="5.0" layoutX="256.0" layoutY="86.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="605.0" prefWidth="873.0" title="Number of Monitored Sites By Color">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <ImageView fitHeight="67.0" fitWidth="98.0" layoutX="1179.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/refresh.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnReload" layoutX="1159.0" layoutY="65.0" mnemonicParsing="false" onAction="#reloadG" opacity="0.0" prefHeight="110.0" prefWidth="110.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

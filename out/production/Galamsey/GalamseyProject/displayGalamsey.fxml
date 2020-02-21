@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GalamseyProject.DisplayGalamsey">
+   <children>
+      <AnchorPane layoutX="-16.0" layoutY="4.0" prefHeight="720.0" prefWidth="1364.0" style="-fx-background-color: #0072ff;">
+         <children>
+            <Pane prefHeight="720.0" prefWidth="237.0" style="-fx-background-color: #393351;">
+               <children>
+                  <ImageView fitHeight="268.0" fitWidth="251.0" layoutX="2.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-3.0" layoutY="-4.0" prefHeight="73.0" prefWidth="1367.0" style="-fx-background-color: #393351;">
+               <children>
+                  <Label fx:id="go_enter" layoutX="43.0" layoutY="-4.0" prefHeight="86.0" prefWidth="410.0" stylesheets="@../css/fullpackstyling.css" text="DISPLAY GALAMSEY DETAILS" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="67.0" fitWidth="86.0" layoutX="67.0" layoutY="619.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/backb.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="39.0" layoutY="559.0" mnemonicParsing="false" onAction="#goHome" opacity="0.0" prefHeight="139.0" prefWidth="143.0" />
+            <TableView fx:id="table1" layoutX="313.0" layoutY="116.0" prefHeight="584.0" prefWidth="960.0" style="-fx-background-color: #0072ff; -fx-border-color: #393351; -fx-border-width: 3; -font-size: 10px;" stylesheets="@../css/table.css">
+               <columns>
+                  <TableColumn fx:id="vegCol" editable="false" prefWidth="192.0" text="VEGATION COLOR" />
+                  <TableColumn fx:id="colVal" editable="false" prefWidth="107.0" text="COLOR VALUE" />
+                  <TableColumn fx:id="posr" editable="false" minWidth="0.0" prefWidth="248.0" text="POSITION" />
+                  <TableColumn fx:id="yrOfEv" editable="false" prefWidth="197.0" text="YEAR" />
+                  <TableColumn fx:id="obs" prefWidth="209.0" text="OBSERVATORY" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

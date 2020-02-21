@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0072ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GalamseyProject.HomeController">
+    <children>
+        <AnchorPane prefHeight="519.0" prefWidth="262.0" style="-fx-background-color: #393351;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+              <Pane prefHeight="649.0" prefWidth="631.0" style="-fx-background-color: #0072ff;" translateX="4.0" BorderPane.alignment="CENTER">
+                  <children>
+                  <ImageView fitHeight="640.0" fitWidth="642.0" layoutX="195.0" layoutY="50.0" opacity="0.24" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/back.png" />
+                     </image>
+                  </ImageView>
+                      <Button layoutX="444.0" layoutY="69.0" mnemonicParsing="false" onAction="#displayGalamseyData" opacity="0.7" prefHeight="248.0" prefWidth="324.0" styleClass="button2" stylesheets="@../css/fullpackstyling.css" />
+                      <Button layoutX="52.0" layoutY="69.0" mnemonicParsing="false" onAction="#enterGalamseyData" opacity="0.7" prefHeight="248.0" prefWidth="324.0" styleClass="button2" stylesheets="@../css/fullpackstyling.css" />
+                      <Pane layoutX="76.0" layoutY="106.0" />
+                      <Pane layoutX="71.0" layoutY="354.0" prefHeight="202.0" prefWidth="288.0">
+                          <children>
+                              <Button layoutX="-18.0" layoutY="-21.0" mnemonicParsing="false" onAction="#enterObsData" opacity="0.7" prefHeight="248.0" prefWidth="324.0" styleClass="button2" stylesheets="@../css/fullpackstyling.css" />
+                              <Circle layoutX="139.0" layoutY="79.0" radius="79.0" stroke="#bbff4f" strokeType="INSIDE" strokeWidth="0.0">
+                                  <fill>
+                                      <LinearGradient endX="0.6714285714285715" endY="1.0" startY="0.5761904761904761">
+                                          <stops>
+                                              <Stop color="#00c6ff" />
+                                              <Stop color="#0073ff" offset="1.0" />
+                                          </stops>
+                                      </LinearGradient>
+                                  </fill>
+                              </Circle>
+                              <ImageView fitHeight="106.0" fitWidth="80.0" layoutX="100.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../resources/obs.png" />
+                                  </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="13.0" layoutY="171.0" prefHeight="27.0" prefWidth="262.0" text="INPUT OBSERVATORY DATA" textFill="WHITE">
+                                  <font>
+                                      <Font name="OCR A Extended" size="19.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </Pane>
+                      <Pane layoutX="456.0" layoutY="354.0" prefHeight="221.0" prefWidth="281.0">
+                          <children>
+                              <Button layoutX="-21.0" layoutY="-12.0" mnemonicParsing="false" onAction="#DisplayObsData" opacity="0.7" prefHeight="248.0" prefWidth="324.0" styleClass="button2" stylesheets="@../css/fullpackstyling.css" />
+                              <Circle layoutX="134.0" layoutY="86.0" radius="79.0" stroke="#bbff4f" strokeType="INSIDE" strokeWidth="0.0">
+                                  <fill>
+                                      <LinearGradient endX="0.6714285714285715" endY="1.0" startY="0.5761904761904761">
+                                          <stops>
+                                              <Stop color="#00c6ff" />
+                                              <Stop color="#0073ff" offset="1.0" />
+                                          </stops>
+                                      </LinearGradient>
+                                  </fill>
+                              </Circle>
+                              <ImageView fitHeight="106.0" fitWidth="80.0" layoutX="97.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../resources/list.png" />
+                                  </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="-2.0" layoutY="178.0" prefHeight="27.0" prefWidth="279.0" text="VIEW OBSERVATORY DATA" textFill="WHITE">
+                                  <font>
+                                      <Font name="OCR A Extended" size="19.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </Pane>
+                      <Circle layoutX="210.0" layoutY="179.0" radius="79.0" stroke="#bbff4f" strokeType="INSIDE" strokeWidth="0.0">
+                          <fill>
+                              <LinearGradient endX="0.6714285714285715" endY="1.0" startY="0.5761904761904761">
+                                  <stops>
+                                      <Stop color="#00c6ff" />
+                                      <Stop color="#0073ff" offset="1.0" />
+                                  </stops>
+                              </LinearGradient>
+                          </fill>
+                      </Circle>
+                      <ImageView fitHeight="106.0" fitWidth="80.0" layoutX="173.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../resources/upload.png" />
+                          </image>
+                      </ImageView>
+                      <Label alignment="CENTER" layoutX="74.0" layoutY="271.0" prefHeight="27.0" prefWidth="279.0" text="INPUT GALAMSEY DATA" textFill="WHITE">
+                          <font>
+                              <Font name="OCR A Extended" size="19.0" />
+                          </font>
+                      </Label>
+                      <Circle layoutX="603.0" layoutY="176.0" radius="79.0" stroke="#bbff4f" strokeType="INSIDE" strokeWidth="0.0">
+                          <fill>
+                              <LinearGradient endX="0.6714285714285715" endY="1.0" startY="0.5761904761904761">
+                                  <stops>
+                                      <Stop color="#00c6ff" />
+                                      <Stop color="#0073ff" offset="1.0" />
+                                  </stops>
+                              </LinearGradient>
+                          </fill>
+                      </Circle>
+                      <ImageView fitHeight="106.0" fitWidth="80.0" layoutX="566.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../resources/ga.png" />
+                          </image>
+                      </ImageView>
+                      <Label alignment="CENTER" layoutX="467.0" layoutY="268.0" prefHeight="27.0" prefWidth="279.0" text="VIEW GALAMSEY DATA" textFill="WHITE">
+                          <font>
+                              <Font name="OCR A Extended" size="19.0" />
+                          </font>
+                      </Label>
+                  </children>
+              </Pane>
+         </center>
+         <left>
+                <VBox prefHeight="615.0" prefWidth="262.0" translateY="215.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="104.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="HOME" textFill="WHITE" translateY="11.0">
+                            <graphic>
+                                <ImageView fitHeight="61.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="40.0" />
+                            </padding></Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#enterAbout" prefHeight="230.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="ABOUT" textFill="WHITE" translateY="38.0">
+                            <graphic>
+                                <ImageView fitHeight="66.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/worker.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="40.0" />
+                            </padding>
+                        </Button>
+                      <ImageView fitHeight="223.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" translateX="23.0" translateY="-365.0">
+                          <image>
+                              <Image url="@../resources/logo.png" />
+                          </image>
+                      </ImageView>
+                  <Button fx:id="summary" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#summaryPage" prefHeight="84.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="SUMMARY" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="66.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/summary.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="closeButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="98.0" prefWidth="262.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="EXIT" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="84.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                    </children>
+                </VBox>
+         </left>
+      </BorderPane>
+      <Pane layoutX="1167.0" layoutY="-2.0" prefHeight="726.0" prefWidth="113.0" style="-fx-background-color: #393351;" />
+    </children>
+</AnchorPane>
