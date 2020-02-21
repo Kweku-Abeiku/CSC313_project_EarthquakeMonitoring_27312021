@@ -41,14 +41,14 @@ CREATE TABLE `galamsey_tbl` (
 --
 
 INSERT INTO `galamsey_tbl` (`Vegcolor`, `colorVal`, `position`, `yearOfEvent`, `ObsName`) VALUES
-('Green', '1', '(123, 123)', '2020', 'asdas'),
-('Yellow', '2', '(13, 3113)', '2019', 'asdas'),
-('Green', '1', '(131, 1313)', '2019', 'asdas'),
-('Green', '1', '(213, 12312)', '2020', 'asdas'),
-('Green', '1', '(23, 424)', '2020', 'asdas'),
-('Brown', '3', '(231, 13231)', '2019', 'asdas'),
-('Yellow', '2', '(232.23, 232.23)', '2020', 'asdas'),
-('green', '1', '(234567.45678, 12345.34567)', '2020', 'asdas');
+('Green', '1', '(123, 123)', '2020', 'Tema'),
+('Yellow', '2', '(13, 3113)', '2019', 'Tema'),
+('Green', '1', '(131, 1313)', '2019', 'Tema'),
+('Green', '1', '(213, 12312)', '2020', 'Tema'),
+('Green', '1', '(23, 424)', '2020', 'Tema'),
+('Brown', '3', '(231, 13231)', '2019', 'Tema'),
+('Yellow', '2', '(232.23, 232.23)', '2020', 'Tema'),
+('green', '1', '(234567.45678, 12345.34567)', '2020', 'Tema');
 
 -- --------------------------------------------------------
 
@@ -68,9 +68,9 @@ CREATE TABLE `observatory` (
 --
 
 INSERT INTO `observatory` (`name`, `country`, `year`, `area`) VALUES
-('asdas', 'asdadad', 2019, 2131.2),
-('isjofi', 'ssada', 2019, 152.3),
-('sfsfsd', 'sdfdsf', 2016, 22.3),
+('Tema', 'Ghana', 2019, 2131.2),
+('isjofi', 'Ghana', 2019, 152.3),
+('sfsfsd', 'Ghana', 2016, 22.3),
 ('uadhao', 'Ghana', 2019, 2112.35);
 
 --
