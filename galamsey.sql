@@ -28,6 +28,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `galamsey_tbl`
 --
 
+CREATE DATABASE galamsey;
+
 CREATE TABLE `galamsey_tbl` (
   `Vegcolor` varchar(20) DEFAULT NULL,
   `colorVal` enum('1','2','3') DEFAULT NULL,
